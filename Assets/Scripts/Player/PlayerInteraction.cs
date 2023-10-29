@@ -16,7 +16,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out RaycastHit hit, interactionDistance))
             {
-                Debug.Log(hit.transform.name);
                 if (hit.transform.TryGetComponent(out Interactable interactable)) {
                     interactable.TryInteract(grabPointTransform);
                 }

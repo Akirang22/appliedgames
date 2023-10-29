@@ -38,13 +38,20 @@ public class PickUp : Interactable
     {
         this.grabPointTransform = grabPointTransform;
         rb.useGravity = false;
-        StopCoroutine(coroutine);
+        DisableOutline();
+
+        if (coroutine != null)
+        {
+            StopCoroutine(coroutine);
+        }
     }
 
     private void Drop()
     {
         grabPointTransform = null;
         rb.useGravity = true;
+        EnableOutline();
+
         coroutine = ReturnToStartState();
         StartCoroutine(coroutine);
     }

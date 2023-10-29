@@ -1698,6 +1698,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7b42c7880fe84974599b25fe238cad58, type: 2}
+    - target: {fileID: 5731895367135420106, guid: 557709c282d74f344b925bb5ece4ecaa,
+        type: 3}
+      propertyPath: outlineWidth
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3256,6 +3261,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 992759473}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &657308928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4028245337636699647, guid: 557709c282d74f344b925bb5ece4ecaa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1700899536892690597}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &657308930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657308928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 5
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &758113394
 GameObject:
   m_ObjectHideFlags: 0
@@ -4993,6 +5022,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2fa9e7ab8f9a42e4eb17b3a9a2096f50, type: 2}
+    - target: {fileID: 5731895367135420106, guid: 557709c282d74f344b925bb5ece4ecaa,
+        type: 3}
+      propertyPath: outlineWidth
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9226,6 +9260,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0807b54e99e1b1547946658f1074d72e, type: 2}
+    - target: {fileID: 5731895367135420106, guid: 557709c282d74f344b925bb5ece4ecaa,
+        type: 3}
+      propertyPath: outlineWidth
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11194,7 +11233,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4028245337636699647, guid: 557709c282d74f344b925bb5ece4ecaa,
+        type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 657308930}
   m_SourcePrefab: {fileID: 100100000, guid: 557709c282d74f344b925bb5ece4ecaa, type: 3}
 --- !u!1001 &6958250254465276889
 PrefabInstance:
