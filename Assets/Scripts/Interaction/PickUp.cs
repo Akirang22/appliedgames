@@ -15,8 +15,9 @@ public class PickUp : Interactable
     [SerializeField]
     private float returnToStartDelay = 10f;
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         rb = GetComponent<Rigidbody>();
         startPos = transform.position;
         startRotation = transform.rotation;
@@ -38,7 +39,6 @@ public class PickUp : Interactable
     {
         this.grabPointTransform = grabPointTransform;
         rb.useGravity = false;
-        DisableOutline();
 
         if (coroutine != null)
         {
@@ -50,7 +50,6 @@ public class PickUp : Interactable
     {
         grabPointTransform = null;
         rb.useGravity = true;
-        EnableOutline();
 
         coroutine = ReturnToStartState();
         StartCoroutine(coroutine);

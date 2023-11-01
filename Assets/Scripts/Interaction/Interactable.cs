@@ -8,13 +8,10 @@ public abstract class Interactable : MonoBehaviour
     protected bool isInteractable = true;
     protected Outline outline;
 
-    private void Start()
+    protected virtual void Start()
     {
         outline = GetComponent<Outline>();
-        if (!isInteractable)
-        {
-            outline.enabled = false;
-        }
+        outline.enabled = false;
     }
 
     public bool TryInteract(Transform grabPointTransform)
@@ -34,7 +31,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (isInteractable)
         {
-            GetComponent<Outline>().enabled = true;
+            outline.enabled = true;
         }
     }
 
@@ -42,7 +39,7 @@ public abstract class Interactable : MonoBehaviour
     {
         if (isInteractable)
         {
-            GetComponent<Outline>().enabled = false;
+            outline.enabled = false;
         }
     }
 }
